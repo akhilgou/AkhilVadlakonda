@@ -7,8 +7,8 @@ It is a static site (HTML/CSS/JS) designed for quick deployment on **GitHub Page
 - `index.html` — main page
 - `styles.css` — styling
 - `script.js` — smooth scroll & mobile nav
-- `avatar.jpg` — your profile photo (rename and add)
-- `resume.pdf` — optional (add if you want a downloadable resume)
+- `avatar.jpg` — your profile photo
+- `resume.pdf` — 
 
 ## How to use
 1. Create a new repository on GitHub (public). Name it:
