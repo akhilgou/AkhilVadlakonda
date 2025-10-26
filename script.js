@@ -1,35 +1,48 @@
-// Smooth scrolling + mobile nav toggle + year
-document.addEventListener('DOMContentLoaded', function() {
-  // set year
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+/* script.js
+   Small helpers for navigation toggle, active link and smooth scrolling
+*/
 
-  // smooth scroll for internal links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const targetSelector = this.getAttribute('href');
-      if (targetSelector && targetSelector !== '#') {
-        e.preventDefault();
-        const target = document.querySelector(targetSelector);
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+document.addEventListener('DOMContentLoaded', function () {
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  navToggle.addEventListener('click', () => {
+    if (navLinks.style.display === 'flex') {
+      navLinks.style.display = 'none';
+    } else {
+      navLinks.style.display = 'flex';
+      navLinks.style.flexDirection = 'column';
+    }
+  });
+
+  // Close mobile nav when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth <= 900) {
+        navLinks.style.display = 'none';
       }
-      // close mobile nav if open
-      const navList = document.getElementById('navList');
-      if (navList && navList.classList.contains('show')) navList.classList.remove('show');
-      const navToggle = document.getElementById('navToggle');
-      if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
     });
   });
 
-  // mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navList = document.getElementById('navList');
-  if (navToggle && navList) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navList.classList.toggle('show');
-      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  // Smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      if (href.length > 1) {
+        e.preventDefault();
+        const target = document.querySelector(href);
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      }
     });
-  }
+  });
+
+  // set copyright year
+  const y = new Date().getFullYear();
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = y;
 });
