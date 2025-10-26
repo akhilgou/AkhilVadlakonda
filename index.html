@@ -3,244 +3,185 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Akhil Vadlakonda — DevOps & Cloud Engineer</title>
-
-  <meta name="description" content="Akhil Vadlakonda — DevOps & Cloud Engineer. AWS, Terraform, Ansible, Jenkins, Kubernetes."/>
-  <meta property="og:title" content="Akhil Vadlakonda — DevOps & Cloud Engineer"/>
-  <meta property="og:description" content="DevOps Engineer with 5+ years experience in cloud automation, CI/CD and monitoring."/>
-  <meta property="og:image" content="avatar.jpg"/>
-
-  <link rel="stylesheet" href="styles.css" />
+  <title>Akhil Vadlakonda | DevOps Engineer</title>
+  <meta name="description" content="Akhil Vadlakonda — DevOps Engineer. Cloud automation, CI/CD, Kubernetes, Terraform."/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#home">Akhil V.</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <a href="#home">Akhil Vadlakonda</a>
-        <small>DevOps & Cloud Engineer</small>
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-photo">
+        <img src="assets/profile.jpg" alt="Akhil Vadlakonda">
       </div>
-
-      <nav class="nav" id="nav">
-        <button id="navToggle" aria-expanded="false" aria-controls="navList">☰</button>
-        <ul id="navList" class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="hero-content">
+        <h1>Akhil Vadlakonda <span class="muted">|</span> <span class="role">DevOps Engineer</span></h1>
+        <p class="tagline">Building scalable infrastructure, automating cloud solutions, and enabling continuous delivery.</p>
+        <div class="contact-row">
+          <a class="btn" href="https://akhilgou.github.io/AkhilVadlakonda/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/akhilvadlakonda" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-email" href="mailto:v.akhilgoud@gmail.com">v.akhilgoud@gmail.com</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="hero-sub">Hello, I’m</p>
-          <h1 class="hero-title">Akhil Vadlakonda</h1>
-          <p class="hero-role">DevOps & Cloud Engineer</p>
-          <p class="hero-desc">
-            DevOps Engineer with 5+ years experience in cloud automation, CI/CD, and monitoring —
-            skilled with AWS, Terraform, Ansible, Jenkins, Docker, and Kubernetes. I design secure,
-            scalable infrastructure and build automation to accelerate releases.
-          </p>
-          <div class="hero-ctas">
-            <a class="btn" href="#contact">Get in touch</a>
-            <a class="btn ghost" href="#experience">View Experience</a>
-          </div>
-        </div>
-
-        <div class="hero-photo" aria-hidden="true">
-          <img src="avatar.jpg" alt="Akhil Vadlakonda" />
-        </div>
-      </div>
-    </section>
-
+  <main>
     <!-- ABOUT -->
-    <section id="about" class="panel">
-      <div class="container">
-        <h2>About Me</h2>
-        <div class="about-grid">
-          <div class="about-text">
-            <p>
-              With over 5 years in IT, I am a seasoned System Administrator and DevOps Engineer skilled
-              in automated environments and Linux administration. I’ve worked across RHEL/CentOS/Ubuntu
-              and Windows stacks, and with cloud platforms including AWS and Azure. My focus is building
-              reliable, automated systems — leveraging configuration management (Ansible, Puppet, Chef),
-              infrastructure-as-code (Terraform, CloudFormation), and CI/CD tooling (Jenkins, Bamboo).
-            </p>
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p class="lead">
+        DevOps Engineer with over 5 years of experience in the IT industry. Skilled in Linux system administration (RHEL/CentOS/Ubuntu), cloud platforms (AWS, Azure), containerization (Docker, Kubernetes), CI/CD (Jenkins, Bamboo), configuration management (Ansible, Puppet, Chef), and Infrastructure as Code (Terraform, CloudFormation). Experienced with monitoring & logging (ELK, Nagios, Splunk, Grafana), scripting (Bash, Python), and virtualization (VMware vSphere). I design automation and scalable infrastructures that improve reliability and reduce release time.
+      </p>
 
-            <p>
-              I have hands-on experience in containerization (Docker), orchestration (Kubernetes),
-              monitoring (ELK, Grafana, Nagios, Splunk), and artifact management (Nexus, Artifactory).
-              I enjoy solving complex automation challenges and improving deployment velocity while
-              maintaining high reliability and security.
-            </p>
-          </div>
-
-          <div class="about-stats">
-            <ul>
-              <li><strong>Location</strong><span> London, Ontario, Canada</span></li>
-              <li><strong>Email</strong><span><a href="mailto:v.akhilgoud@gmail.com">v.akhilgoud@gmail.com</a></span></li>
-              <li><strong>Phone</strong><span>+1 519-871-7857</span></li>
-              <li><strong>Availability</strong><span>Open to opportunities</span></li>
-            </ul>
-          </div>
-        </div>
+      <div class="quick-info">
+        <div><strong>Phone</strong><br>519-871-7857</div>
+        <div><strong>Location</strong><br>London, Ontario, Canada</div>
+        <div><strong>Email</strong><br><a href="mailto:v.akhilgoud@gmail.com">v.akhilgoud@gmail.com</a></div>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="panel alt">
-      <div class="container">
-        <h2>Skills & Tools</h2>
-        <div class="skills-grid">
-          <div class="skill">
-            <h3>Cloud & Platform</h3>
-            <p>AWS, Azure, OpenShift, EC2, S3, Lambda, AKS</p>
-          </div>
-          <div class="skill">
-            <h3>Infrastructure & IaC</h3>
-            <p>Terraform, CloudFormation, Ansible, Puppet, Chef</p>
-          </div>
-          <div class="skill">
-            <h3>CI / CD</h3>
-            <p>Jenkins, Bamboo, Git, Bitbucket, GitHub Actions, Maven, ANT</p>
-          </div>
-          <div class="skill">
-            <h3>Containers & Orchestration</h3>
-            <p>Docker, Kubernetes, ECS</p>
-          </div>
-          <div class="skill">
-            <h3>Monitoring & Logging</h3>
-            <p>ELK (Elasticsearch, Logstash, Kibana), Grafana, Prometheus, Nagios, Splunk</p>
-          </div>
-          <div class="skill">
-            <h3>Languages & Scripting</h3>
-            <p>Bash, Shell, Python, PowerShell</p>
-          </div>
+    <section id="skills" class="section alt container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Cloud (AWS / Azure / OpenShift)</h4>
+          <div class="bar"><span style="width:88%"></span></div>
         </div>
+        <div class="skill">
+          <h4>CI/CD (Jenkins, Bamboo)</h4>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Infrastructure as Code (Terraform, CloudFormation)</h4>
+          <div class="bar"><span style="width:82%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Config Mgmt (Ansible, Puppet, Chef)</h4>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Containers & Orchestration (Docker, Kubernetes)</h4>
+          <div class="bar"><span style="width:86%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Monitoring & Logging (ELK, Grafana, Splunk)</h4>
+          <div class="bar"><span style="width:78%"></span></div>
+        </div>
+        <div class="skill">
+          <h4>Scripting (Bash, Python)</h4>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+      </div>
+
+      <div class="tools">
+        <h4>Tools & Technologies</h4>
+        <ul>
+          <li>Docker, Kubernetes, Helm</li>
+          <li>Terraform, CloudFormation</li>
+          <li>Ansible, Puppet, Chef</li>
+          <li>Jenkins, Bamboo, Git</li>
+          <li>ELK Stack, Grafana, Nagios, Splunk</li>
+          <li>VMware vSphere, OpenShift</li>
+        </ul>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="panel">
-      <div class="container">
-        <h2>Professional Experience</h2>
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
 
-        <div class="timeline">
-          <article class="job">
-            <h3>DevOps Engineer / Cloud Engineer — Amazon</h3>
-            <span class="muted">Jun 2020 — Jun 2023</span>
-            <ul>
-              <li>Designed secure, cost-optimized, highly available infrastructure; improved uptime by 25%.</li>
-              <li>Built and maintained Kubernetes clusters and containerized applications; reduced manual deployment time by 40%.</li>
-              <li>Managed infrastructure with Terraform and implemented CI/CD with Jenkins, Ansible, and Maven.</li>
-              <li>Implemented IAM, IAM key rotation, Secrets Manager and CloudTrail for security and auditing.</li>
-              <li>Converted parts of architecture to serverless (AWS Lambda) and automated deployments using CloudFormation & Terraform.</li>
-            </ul>
-            <p class="env"><strong>Environment:</strong> AWS, Terraform, Jenkins, Docker, Kubernetes, Ansible, Tomcat, Nexus, Jira, Git</p>
-          </article>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>DevOps / Cloud Engineer — Amazon</h3>
+          <span class="date">Jun 2020 – Jun 2023</span>
+          <ul>
+            <li>Designed secure, cost-optimized, highly available infrastructure; improved uptime and enforced AWS best practices.</li>
+            <li>Installed and maintained Kubernetes clusters and containerized applications — cut manual deployment time significantly.</li>
+            <li>Authored Ansible playbooks for Kafka, Grafana, Prometheus and automated deployments using Terraform.</li>
+            <li>Implemented IAM best practices, secrets management (AWS Secrets Manager) and automated key rotation solutions.</li>
+            <li>Converted some workloads into serverless where appropriate with AWS Lambda and CloudFormation.</li>
+          </ul>
+        </div>
 
-          <article class="job">
-            <h3>System Engineer — V-Cyan IT Services Pvt.</h3>
-            <span class="muted">Mar 2018 — May 2020</span>
-            <ul>
-              <li>Automated middleware installation and deployments across RHEL environments using Puppet and CloudFormation.</li>
-              <li>Built CI/CD pipelines with Hudson/Jenkins, automating builds and deployments using Groovy scripts & Ant/Maven.</li>
-              <li>Managed PaaS deployments on OpenShift and orchestrated containerized services.</li>
-              <li>Automated infrastructure and monitoring with Ansible Tower, Terraform, Docker and Nagios.</li>
-            </ul>
-            <p class="env"><strong>Environment:</strong> Ubuntu, Chef, AWS, Maven, SonarQube, Nagios, Python, VMware, Jenkins</p>
-          </article>
+        <div class="timeline-item">
+          <h3>System Engineer — V-Cyan IT Services Pvt.</h3>
+          <span class="date">Mar 2018 – May 2020</span>
+          <ul>
+            <li>Automated installation, deployment, and maintenance of middleware application servers on RHEL/Ubuntu.</li>
+            <li>Used CloudFormation + Puppet for automation and deployed PaaS apps on OpenShift.</li>
+            <li>Implemented CI/CD pipelines using Jenkins and Groovy; containerized apps with Docker and monitored with Nagios.</li>
+            <li>Migrated workloads from VMware to AWS and automated deployments using Ansible, Terraform, and scripting (Bash/Python).</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- CERTIFICATIONS -->
-    <section id="certifications" class="panel alt">
-      <div class="container">
-        <h2>Certifications & Training</h2>
-        <div class="cert-grid">
-          <div class="cert">
-            <h4>AWS-related Experience</h4>
-            <p>Hands-on with EC2, S3, CloudFormation, IAM, CloudTrail, Lambda; security & automation practices applied in production.</p>
-          </div>
-          <div class="cert">
-            <h4>Configuration Management</h4>
-            <p>Experience with Ansible, Puppet, Chef — developed playbooks, manifests, and cookbooks for server provisioning.</p>
-          </div>
-          <div class="cert">
-            <h4>CI/CD & Automation</h4>
-            <p>Designed pipelines using Jenkins, Bamboo, ANT/Maven, integrated SonarQube, Nexus, and artifact workflows.</p>
-          </div>
-        </div>
-      </div>
+    <section id="certs" class="section alt container">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>— (Add certifications here: e.g., AWS Certified Solutions Architect, Certified Kubernetes Administrator)</li>
+      </ul>
+      <p class="muted small">Add certificate links and issued dates here when available.</p>
     </section>
 
     <!-- EDUCATION -->
-    <section id="education" class="panel">
-      <div class="container">
-        <h2>Education</h2>
-        <div class="edu-list">
-          <div class="edu-item">
-            <h4>Bachelor's in Computer Science Engineering</h4>
-            <p>JNTU, India</p>
-          </div>
-          <div class="edu-item">
-            <h4>Information Technology</h4>
-            <p>Fanshawe College, Canada</p>
-          </div>
+    <section id="education" class="section container">
+      <h2>Education</h2>
+      <div class="edu-grid">
+        <div class="edu">
+          <h4>Fanshawe College — Information Technology (Canada)</h4>
+          <p class="muted">Post-secondary study in Information Technology</p>
+        </div>
+        <div class="edu">
+          <h4>JNTU (Jawaharlal Nehru Technological University) — Bachelor's in Computer/Information Technology Management</h4>
+          <p class="muted">Bachelor's degree in Computer/Information Technology</p>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="panel alt contact-panel">
-      <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-          <div>
-            <p>If you'd like to work together or have questions, reach out—I'm always open to interesting projects and opportunities.</p>
-            <ul class="contact-info">
-              <li><strong>Email</strong>: <a href="mailto:v.akhilgoud@gmail.com">v.akhilgoud@gmail.com</a></li>
-              <li><strong>Phone</strong>: +1 519-871-7857</li>
-              <li><strong>Location</strong>: London, Ontario, Canada</li>
-              <li><strong>Resume</strong>: <a href="resume.pdf" download>Download PDF</a> (optional)</li>
-            </ul>
-            <p class="muted">You can also find me on <a href="https://github.com/reddy5310" target="_blank" rel="noopener noreferrer">GitHub</a> and <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-          </div>
+    <section id="contact" class="section alt container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <h4>Get in touch</h4>
+          <p>I’m open to full-time roles, contracts, and collaborations. Email me at <a href="mailto:v.akhilgoud@gmail.com">v.akhilgoud@gmail.com</a> or view my GitHub & LinkedIn.</p>
+          <p><strong>Phone:</strong> 519-871-7857</p>
+        </div>
 
-          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
-
-            <label for="email">Email</label>
-            <input id="email" name="_replyto" type="email" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-            <p class="muted small">Tip: replace the form action with your Formspree / Getform endpoint or remove form for mailto link.</p>
-          </form>
+        <div>
+          <h4>Quick links</h4>
+          <p><a href="https://akhilgou.github.io/AkhilVadlakonda/" target="_blank" rel="noreferrer">GitHub Projects</a></p>
+          <p><a href="https://www.linkedin.com/in/akhilvadlakonda" target="_blank" rel="noreferrer">LinkedIn Profile</a></p>
         </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Akhil Vadlakonda. Built with HTML, CSS & JS.</p>
-      <p class="muted">Designed in the style of the provided example. </p>
-    </div>
-  </footer>
+      <div class="footer">
+        <p>© <span id="year"></span> Akhil Vadlakonda — Built for GitHub Pages</p>
+      </div>
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
