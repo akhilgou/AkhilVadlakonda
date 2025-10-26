@@ -1,16 +1,5 @@
-# Akhil Vadlakonda - DevOps Engineer Portfolio
+# Akhil Vadlakonda — Portfolio (Light Theme)  
 
-A modern, professional portfolio website built using **HTML, CSS, and JavaScript** — fully responsive and deployed on **GitHub Pages**.
+Responsive single-page portfolio built with plain HTML, CSS and JavaScript — ready for GitHub Pages.
 
-## 🧩 Features
-- Dark, elegant theme inspired by VS Code and GitHub
-- Responsive design for mobile and desktop
-- Smooth scroll navigation
-- Clean typography with Inter font
-- Easy customization and deployment
-
-## 🚀 Deployment (GitHub Pages)
-1. Fork or clone this repo.
-2. Go to **Settings → Pages**.
-3. Under “Branch”, select `main` and folder `/ (root)`.
-4. Save — your site will be live at:
+## Files
