@@ -10,5 +10,3 @@ This is a fully responsive portfolio website built using:
 
 ---
 
-## 📁 Folder Structure
-
