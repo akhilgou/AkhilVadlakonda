@@ -1,0 +1,172 @@
+:root {
+  --bg-color: #0d1117;
+  --text-color: #e6edf3;
+  --accent-color: #007aff;
+  --card-bg: #161b22;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #0d1117;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 8em 1em;
+  background: linear-gradient(145deg, #0d1117, #1b1f27);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero h1 span {
+  color: var(--accent-color);
+}
+
+.hero h2 {
+  color: #a9b2bc;
+  margin-bottom: 1em;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #005ac1;
+}
+
+/* Sections */
+.section {
+  padding: 5em 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 1.5em;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  padding: 1.5em;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Timeline */
+.timeline {
+  border-left: 2px solid var(--accent-color);
+  padding-left: 2em;
+}
+
+.timeline-item {
+  margin-bottom: 2em;
+}
+
+.timeline-item h3 {
+  color: var(--accent-color);
+}
+
+/* Certifications */
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.cert-card {
+  background: var(--card-bg);
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 0.5em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2em;
+  font-size: 0.9em;
+  color: #8b949e;
+  background: #0d1117;
+}
