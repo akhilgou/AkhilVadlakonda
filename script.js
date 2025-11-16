@@ -22,3 +22,17 @@ function toggleMenu() {
 if (hamburger) {
   hamburger.addEventListener('click', toggleMenu);
 }
+
+// Smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (!target) return;
+    e.preventDefault();
+    // close mobile menu if open
+    if (navLinks && window.innerWidth < 760 && navLinks.style.display === 'flex') {
+      navLinks.style.display = '';
+    }
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
