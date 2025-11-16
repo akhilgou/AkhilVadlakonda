@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+.section {
+    padding: 70px 10%;
+}
+
+.title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #0066ff;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #004bcc;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffffee;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 40px;
+}
+
+.home-content span {
+    color: #0066ff;
+}
+
+.home-img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.skills-grid span {
+    padding: 10px 20px;
+    background: #ebf1ff;
+    border-radius: 8px;
+}
+
+/* Experience Cards */
+.exp-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 5px solid #0066ff;
+}
+
+.exp-date {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Certifications */
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cert-grid span {
+    background: #ebf1ff;
+    padding: 12px 22px;
+    border-radius: 6px;
+}
+
+/* Education */
+.edu-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Contact */
+.contact-buttons {
+    margin-top: 20px;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #eaeaea;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 60px;
+        right: 10%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .home-img img {
+        width: 250px;
+    }
+}
